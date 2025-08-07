@@ -1,13 +1,8 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Layout from "@/components/layouts/Layout";
 
- function App({ Component, pageProps }: AppProps) {
-  return 
-  ( <Layout>
-  <Component {...pageProps} />
-  </Layout>
-  );  
+export default function App ({Component, pagesProps}: AppProps) {
+  return (
+    <Component {...pagesProps} />
+  );
 }
- export default App;
-// This file is the main entry point for the Next.js application.
